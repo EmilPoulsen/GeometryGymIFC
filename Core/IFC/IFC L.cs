@@ -471,8 +471,11 @@ namespace GeometryGym.Ifc
 			if (mPlacementRelTo > 0)
 				PlacementRelTo.mReferencedByPlacements.Add(this);
 		}
+        public List<IfcProduct> PlacesObject {
+            get { return mPlacesObject; }
+        }
 
-		internal override bool isXYPlane
+        internal override bool isXYPlane
 		{
 			get
 			{
