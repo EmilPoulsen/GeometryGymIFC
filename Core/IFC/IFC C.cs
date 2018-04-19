@@ -274,7 +274,8 @@ namespace GeometryGym.Ifc
 			}
 			return base.BuildStringSTEP() + sb.ToString() + ")";
 		}
-	}
+        public Tuple<double, double>[] CoordList { get { return mCoordList; } }
+    }
 	public partial class IfcCartesianPointList3D : IfcCartesianPointList //IFC4
 	{
 		private Tuple<double, double, double>[] mCoordList = new Tuple<double, double, double>[0];//	 :	LIST [1:?] OF LIST [3:3] OF IfcLengthMeasure; 
